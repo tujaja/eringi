@@ -1,0 +1,12 @@
+tmp/
+log/
+public/downloads/
+config/database.yml
+config/config.yml
+
+vendor/rails/
+test/
+
+db/*.sqlite3
+db/schema.rb
+

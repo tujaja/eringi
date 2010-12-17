@@ -1,0 +1,24 @@
+<div id="records">
+<% if @downloads.any? -%>
+
+<% @downloads.each do |download| %>
+  <ul>
+    <li class="id"><span class="item"><%=h download.id %></span></li>
+    <li class="filename"><span class="item"><%=h download.filename %></span></li>
+    <li class="content"><span class="item"><%=h download.content_type %></span></li>
+    <li class="size"><span class="item"><%=h to_megabyte(download.size) %></span></li>
+    <li class="time"><span class="item"><%=h to_japan_time(download.updated_at) %></span></li>
+    <li class="gadget">
+      <%= link_to (image_tag "download.png", :alt => "download"), dl_download_path(download) %>
+    </li>
+    <li class="gadget">
+      <%= link_to_remote (image_tag "delete.png", :alt => "delete"),
+        :url => download_path(download), :method => :delete %>
+    </li>
+  </ul>
+    <div class="clear"></div>
+<% end %>
+<% else -%>
+  <p class="notice">no available files</p>
+<% end -%>
+</div>

@@ -1,0 +1,4 @@
+development:
+  storage:
+    downloads_path: ""
+    tmp_path:       ""

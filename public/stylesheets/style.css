@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, blockquote, p, th, td {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  background: #FFFFFF repeat scroll 0 0;
+
+  font-family:
+      helvetica,
+      "Lucida Grande", "Verdana",
+      Meiryo,
+      "Hiragino Kaku Gothic Pro W3",
+      Osaka,
+      sans-serif;
+  color: #111;
+}
+
+/* Basic Elements */
+h1,h2,h3,h4,h5,h6 {font-size: 100%;}
+p { font-size: 12px; }
+li { font-size: 12px; }
+dt, dd { font-size: 12px; }
+
+hr { visibility: hidden; }
+
+ol, ul {
+  list-style: none;
+  list-style-image: none;
+  list-style-position: outside;
+}
+ol { list-style-type: decimal; }
+
+
+ol, ul {
+  list-style: none;
+  list-style-image: none;
+  list-style-position: outside;
+}
+
+a, a:link, a:visited, a:hover, a:active { overflow: hidden; text-decoration: none; }
+
+/* form */
+input, select, textarea {
+  letter-spacing: 0;
+}
+
+input, form select, form textarea,textarea {
+    font-size:12px;
+    letter-spacing: 0;
+    border: 2px solid #CCC;
+    padding: 3px;
+}
+
+input:focus, form select:focus, form textarea:focus {
+    border:2px solid #D5B006;
+}
+
+textarea {
+  padding: 0;
+  font-size: 1.0em;
+  line-height: 1.2em;
+}
+
+/* table */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display:block;
+}
+
+table th, table thead td {
+  white-space: nowrap;
+}
+
+address {font-style:normal;}
+
+/* multipurpose class */
+div.clear { clear: both; }
+div.left { float: left; }
+div.right { float: right; }
+
+
+/* Wrapper*/
+
+#wrapper {
+  position: relative;
+  width: 740px;
+  margin:  0px auto;
+  margin-top: 30px;
+  padding: 0px auto;
+  background-color: #FFF;
+}
+
+/* Header*/
+
+#header { position: relative; height: 30px; }
+
+#logo {
+  background: url("../images/3shimeji_s.jpg") no-repeat scroll left;
+  background-color: #FFF;
+  text-indent: -3000px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 80px;
+  height: 82px;
+  z-index: 5;
+}
+
+#logo a {
+  display: block;
+  height: 84px;
+  width: 84px;
+}
+
+/* contents*/
+
+#contents {
+  position: relative;
+}
+
+/* footer */
+
+#footer {
+  position: absolute;
+  width: 720px;
+  padding: 5px 10px;
+  border-top: 1px solid #DDD;
+  color: #999;
+}
+
+/* colors */
+
+
+/* generic parts */
+span.mark  {
+  color: #333;
+  background:#DDD;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px;
+  white-space: nowrap;
+}
+
+/* button */
+
+span.btn a {
+  margin:0;
+  border: none;
+  font-weight:normal;
+  cursor:pointer;
+}
+
+span.btn a:hover {
+  color: #D5B006;
+  background-color: #78576A;
+}
+
+div.btn_small {
+  padding: 3px 0;
+}
+
+span.btn_small a {
+  font-size:12px;
+  padding:3px 10px;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+}
+
+span.btn_bk_or a { color:#111; background:#f96;  }
+span.btn_bk_wh a { color:#111; background:#fff; }
+span.btn_bk_gr a { color:#111; background:#9C9; }
+span.btn_wh_bl a { color:#fff; background:#4ea6cc; }
+
+
+/* contents_header */
+#contents_header { padding: 5px;  background-color: #DDD; }
+
+/* contents_main */
+#contents_main { padding: 10px; }
+#contents_main h3 { padding: 3px 0; font-size: 14px; color: #333; border-bottom: solid #DDD 1px; }
+#contents_main p { padding: 3px 0; font-size: 14px; }
+#contents_main p.notice { padding: 5px 0; text-align: center; }
+
+/* upload */
+
+#upload_iframe { width: 0px; height: 0px; border: 0px; }
+#upload_form { padding: 5px; }
+
+/* records */
+#records ul { height: 20px; padding: 5px 0; border-bottom: solid #EEE 1px; }
+#records ul li { float: left; }
+  #records ul li.id { width: 30px; text-align: center; }
+  #records ul li.filename { width: 150px; }
+  #records ul li.content { width: 100px; }
+  #records ul li.size { width: 100px; }
+  #records ul li.time { width: 200px; }
+  #records ul li.gadget { width: 30px; }
+
+#records ul li .item,
+#records ul li a  {
+  background-color: #F5F5F5;
+  border: 1px solid #CDCDCD;
+  color: #565656;
+  display: block;
+  padding: 3px 7px;
+  position: relative;
+}

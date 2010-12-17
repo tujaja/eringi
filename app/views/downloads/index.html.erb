@@ -1,0 +1,12 @@
+<div id="contents_header">
+  <%= render :partial => 'upload_form' %>
+  <%#= render :partial => "search" %>
+</div>
+
+<div id="contents_main">
+  <h3>uploaded files</h3>
+  <%#= render :partial => 'admin/record_results',
+    :locals => { :entries => @downloads, :search_word => @search_word  } %>
+  <%= render :partial => 'records' %>
+</div>
+<%#= javascript_include_tag "lightbox.js" %>
